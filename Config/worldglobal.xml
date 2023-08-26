@@ -1,0 +1,45 @@
+<configs>
+	<append xpath="/worldglobal">
+		<!-- Apply this biome patch to all world -->
+		<biomes-config world="*">
+			<!-- Patch some splat textures (road/gravel) -->
+			<!-- Note on a potential future optimization to enable more features. -->
+			<!-- SplatMaps define where to paint roads for distant and voxel shaders. -->
+			<!-- If all topsoil blocks for the 8 splatmap types have distinct voxels, -->
+			<!-- we could use this info in the detail voxel shader to free up textures. -->
+			<!-- E.g. road textures would not render because of splat map but top block. -->
+			<!-- E.g. it would allow to replace roads with a different topsoil block. -->
+			<!-- This only works for detail shader, as distant shader has no voxel info! -->
+			<!-- Might be solvable to draw into the splatmaps when top-block is replaced!? -->
+			<microsplat-patch index="4">
+				<property name="Diffuse" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_diff_tarray[0]"/>
+				<property name="Normal" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_norm_tarray[0]"/>
+				<property name="Specular" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_shao_tarray[0]"/>
+				<property name="SwitchNormal" value="false"/>
+				<property name="SplatUVScale" value="1.5,1.5"/>
+			</microsplat-patch>
+			<microsplat-patch index="5">
+				<property name="Diffuse" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_diff_tarray[1]"/>
+				<property name="Normal" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_norm_tarray[1]"/>
+				<property name="Specular" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_shao_tarray[1]"/>
+				<property name="SwitchNormal" value="false"/>
+				<property name="SplatUVScale" value="1.5,1.5"/>
+			</microsplat-patch>
+			<!-- Patch the Voxel SplatMaps (index above 12) -->
+			<microsplat-patch index="16">
+				<property name="Diffuse" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_diff_tarray[0]"/>
+				<property name="Normal" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_norm_tarray[0]"/>
+				<property name="Specular" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_shao_tarray[0]"/>
+				<property name="SwitchNormal" value="false"/>
+				<property name="SplatUVScale" value="1.5,1.5"/>
+			</microsplat-patch>
+			<microsplat-patch index="14">
+				<property name="Diffuse" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_diff_tarray[1]"/>
+				<property name="Normal" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_norm_tarray[1]"/>
+				<property name="Specular" value="#@modfolder:Resources/Roads.unity3d?MicroSplatRoads_shao_tarray[1]"/>
+				<property name="SwitchNormal" value="false"/>
+				<property name="SplatUVScale" value="1.5,1.5"/>
+			</microsplat-patch>
+		</biomes-config>
+	</append>
+</configs>

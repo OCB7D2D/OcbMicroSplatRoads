@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="OcbMicroSplatRoads" />
+	<DisplayName value="OCB Custom MicroSplat Roads Demo" />
+	<Description value="Patch MicroSplat road textures, requires OcbMicroSplat." />
+	<Website value="https://github.com/OCB7D2D/OcbMicroRoads" />
+	<Author value="ocbMaurice" />
+	<Version value="0.1.0" />
+</xml>
