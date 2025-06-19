@@ -27,7 +27,9 @@ MonoBehaviour:
     IsHeightNormalized: 1
     Smoothness: {fileID: 2800000, guid: c28766b7ecd4dba40acd1f24f22f4bfb, type: 3}
     IsRoughness: 1
+    Metallic: {fileID: 0}
     Occlusion: {fileID: 2800000, guid: bc3c122371f424d4b9d581749097b1e0, type: 3}
+    Emission: {fileID: 0}
   - Albedo: {fileID: 2800000, guid: d37cef2415c8a6545aab2ee343608104, type: 3}
     Height: {fileID: 2800000, guid: fbf695dcde50ea047aa15699a7945ffe, type: 3}
     Normal: {fileID: 2800000, guid: 328eb323cce051e4dbb132f7254adf15, type: 3}
@@ -37,4 +39,6 @@ MonoBehaviour:
     IsHeightNormalized: 1
     Smoothness: {fileID: 2800000, guid: 2fa6d901002110f459523563c0c35fdf, type: 3}
     IsRoughness: 1
+    Metallic: {fileID: 0}
     Occlusion: {fileID: 2800000, guid: 258556492eb54934a969bab1325f719e, type: 3}
+    Emission: {fileID: 0}
